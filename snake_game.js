@@ -100,8 +100,7 @@ const moveSnake = () => {
     //Snake bites itself
     if (currentSnakeHeadPixel.classList.contains("snakeBodyPixel")){
         clearInterval(moveSnakeInterval);
-        if (!alert(`you have ate ${totalFoodAte} food by travelling ${totalBlocksTravelled} blocks\n
-                    your final length is ${snakeLength}`))
+        if (!alert(`you have ate ${totalFoodAte} food by travelling ${totalBlocksTravelled} blocks\nyour final length is ${snakeLength}`))
             window.location.reload();
     }
 
